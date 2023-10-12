@@ -1,0 +1,33 @@
+<!-- base.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Sitio Web</title>
+    <!-- Enlaces a hojas de estilo CSS comunes -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <!-- Contenido del encabezado, como menús de navegación -->
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/pagina1">Página 1</a></li>
+                <li><a href="/pagina2">Página 2</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido de la página -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <!-- Contenido del pie de página, como información de contacto -->
+        <p>&copy; 2023 Mi Sitio Web</p>
+    </footer>
+</body>
+</html>
