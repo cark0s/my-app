@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.1",
+    "leaflet": "^1.9.4",
     "ol": "latest",
     "ol-layerswitcher": "^4.1.1"
   }

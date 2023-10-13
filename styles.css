@@ -170,30 +170,37 @@ a.skiplink:focus {
   padding: 0.3em;
 }
 
-/* Estilos para el enfoque del mapa */
-#map:focus {
-  outline: #4A74A8 solid 0.15em;
-}
-
-/* Estilos para el layer switcher */
-.layer-switcher {
+/* Estilos para el layer switcher de Leaflet */
+.leaflet-control-layers {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 1000;
-  background-color: white;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  top: 10px; /* Posición arriba */
+  right: 10px; /* Posición a la derecha */
+  z-index: 1000; /* Capa z-index para estar arriba */
+  background-color: white; /* Fondo blanco */
+  padding: 5px; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde con color */
+  border-radius: 4px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
-/* Estilos adicionales para el layer switcher en modo de activación de clic */
-.layer-switcher.shown.layer-switcher-activation-mode-click {
-  padding-right: 34px;
+/* Estilos para el botón de abrir/cerrar el layer switcher */
+.leaflet-control-layers-toggle {
+  display: block;
+  text-align: center;
+  background-color: #007bff; /* Fondo azul */
+  color: #fff; /* Texto blanco */
+  padding: 5px 10px; /* Espaciado interno */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
 }
 
-/* Estilos para el botón dentro del layer switcher en modo de activación de clic */
-.layer-switcher.shown.layer-switcher-activation-mode-click > button {
-  right: 0;
-  border-left: 0;
+/* Estilos para las capas del layer switcher */
+.leaflet-control-layers-overlays {
+  margin-top: 5px; /* Margen superior */
+}
+
+/* Estilos para las etiquetas de las capas */
+.leaflet-control-layers-label {
+  display: block;
+  margin-bottom: 5px; /* Margen inferior */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
 }
