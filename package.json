@@ -12,6 +12,7 @@
   "dependencies": {
     "bootstrap": "^5.3.1",
     "leaflet": "^1.9.4",
+    "leaflet-easybutton": "^2.4.0",
     "ol": "latest",
     "ol-layerswitcher": "^4.1.1"
   }

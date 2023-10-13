@@ -1,5 +1,6 @@
 // Importa Leaflet
 import L from 'leaflet';
+import 'leaflet-easybutton';
 
 // Inicializa el mapa en un punto y nivel de zoom específicos
 var map = L.map('map').setView([-25.483828, -54.672011], 20);
@@ -61,3 +62,24 @@ fetch('https://cdn.glitch.global/e07e2922-47a6-4542-a11a-86e039aa6cbf/BloqueAula
         layerControl.addOverlay(geojsonLayer, 'Bloque de aulas');
         geojsonLayer.addTo(map);
     });
+// Agregar funcionalidad de geolocalización
+
+map.locate({ setView: true, maxZoom: 16 });
+
+function onLocationFound(e) {
+    L.marker(e.latlng).addTo(map)
+        .bindPopup("Tu ubicación actual").openPopup();
+}
+
+function onLocationError(e) {
+    alert(e.message);
+}
+
+map.on('locationfound', onLocationFound);
+map.on('locationerror', onLocationError);
+
+
+// Crear un botón para volver a la ubicación actual con un ícono de crosshairs más grande (lg)
+const centerButton = L.easyButton('fas fa-crosshairs fa-lg', function () {
+    map.locate({ setView: true, maxZoom: 16 });
+}).addTo(map);
