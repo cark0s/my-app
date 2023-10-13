@@ -10,7 +10,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Carga y agrega el archivo GeoJSON al mapa
-fetch('geojson/arearecreativa.geojson')
+fetch('https://cdn.glitch.global/e07e2922-47a6-4542-a11a-86e039aa6cbf/Arearecreativas.geojson?v=1697226277657')
     .then(function (response) {
         return response.json();
     })
