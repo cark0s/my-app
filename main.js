@@ -15,7 +15,7 @@ const map = new Map({
     }), 
     new ImageLayer({
       source: new ImageWMS({
-        url: 'https://cool-renewed-kiwi.ngrok-free.app/geoserver/prueba/wms',
+        url: 'http://localhost:8095/geoserver/prueba/wms',
         params: {
           LAYERS: 'prueba:area recretivas'
         },
@@ -26,7 +26,7 @@ const map = new Map({
     }),
     new ImageLayer({
       source: new ImageWMS({
-        url: 'https://cool-renewed-kiwi.ngrok-free.app/geoserver/prueba/wms',
+        url: 'http://localhost:8095/geoserver/prueba/wms',
         params: {
           LAYERS: 'prueba:bloque de aulas'
         },
