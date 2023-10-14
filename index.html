@@ -10,16 +10,16 @@
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="css-selector">
+    <div class="css-selector bg-dark text-white py-2">
         <div class="container">
-            <div class="header-1-wrap">
-                <div class="">
+            <div class="row">
+                <div class="col-12 col-md-6">
                     <div class="headerslogan">
                         <a href="index&amp;lang=es">
                             <img src="https://www.fpune.edu.py/v2/assets/img/banderas/py.png" width="30" border="0" alt="ES"
                                 title="Cambiar idioma a Español">
                         </a>
-
+    
                         <a href="index&amp;lang=pt">
                             <img src="https://www.fpune.edu.py/v2/assets/img/banderas/br.png" width="30" alt="PT" title="Cambiar idioma a Portugués">
                         </a>
@@ -29,25 +29,38 @@
                         <span>Bienvenidos a la Facultad Politécnica - UNE</span>
                     </div>
                 </div>
-                <div class="header-social-loc">
-                    <div class="header-loc">
-                        <span class="loc-txt"><i class="ti ti-email text-white"></i> secretaria@fpune.edu.py</span>
+                <div class="col-12 col-md-6">
+                    <div class="header-social-loc text-md-right">
+                        <div class="header-loc">
+                            <span class="loc-txt"><i class="ti ti-email"></i> secretaria@fpune.edu.py</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     
+    
+    
     <!-- Encabezado de Bootstrap -->
-    <header class="d-flex justify-content-center py-3 bg-dark">
-        <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-            <li class="nav-item"><a href="https://spot-sugared-neon.glitch.me" class="nav-link">Realidad Aumentada</a></li>
-        </ul>
-    </header>
+ <!-- Encabezado de Bootstrap -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Nombre de tu Sitio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://spot-sugared-neon.glitch.me">Realidad Aumentada</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
     <!-- Contenedor del mapa -->
     <div id="map" style="width: 100%; height: 500px;"></div>
