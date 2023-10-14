@@ -13,3 +13,13 @@
   for = "/derecho.html"
   [headers.values]
     Encabezado-Derecho = "Valor para la página DERECHO"
+    [[headers]]
+
+  for = "/economia.html"
+  [headers.values]
+    Encabezado-Derecho = "Valor para la página DERECHO"
+
+[[headers]]
+  for = "/rectorado.html"
+  [headers.values]
+    Encabezado-Derecho = "Valor para la página DERECHO"
