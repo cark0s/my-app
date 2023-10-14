@@ -1,25 +1,4 @@
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Header-Name1 = "Valor global para todos los archivos"
-    Header-Name2 = "Otro valor global"
-
-[[headers]]
-  for = "/fafi.html"
-  [headers.values]
-    Encabezado-Fafi = "Valor para la página FAFI"
-
-[[headers]]
-  for = "/derecho.html"
-  [headers.values]
-    Encabezado-Derecho = "Valor para la página DERECHO"
-    [[headers]]
-
-  for = "/economia.html"
-  [headers.values]
-    Encabezado-Derecho = "Valor para la página DERECHO"
-
-[[headers]]
-  for = "/rectorado.html"
-  [headers.values]
-    Encabezado-Derecho = "Valor para la página DERECHO"
+[[redirects]]
+  from = "/rectorado.html"
+  to = "/ruta-de-rectorado"
+  status = 301
