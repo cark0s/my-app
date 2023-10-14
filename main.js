@@ -47,21 +47,34 @@ fetch('https://cdn.glitch.global/e07e2922-47a6-4542-a11a-86e039aa6cbf/Arearecrea
         var geojsonLayer = L.geoJSON(data, {
             style: myStyle, // Aplica el estilo al cargar la capa GeoJSON
         });
+
+       // Agrega un popup con el nombre de la capa
+    geojsonLayer.bindPopup(function (layer) {
+        return layer.feature.properties.Nombre;
+    });
         layerControl.addOverlay(geojsonLayer, 'Area recreativas');
         geojsonLayer.addTo(map);
     });
 
+
 fetch('https://cdn.glitch.global/e07e2922-47a6-4542-a11a-86e039aa6cbf/BloqueAulas.geojson?v=1697226286882')
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-        var geojsonLayer = L.geoJSON(data, {
-            style: myStyle2, // Aplica el estilo al cargar la capa GeoJSON
-        });
-        layerControl.addOverlay(geojsonLayer, 'Bloque de aulas');
-        geojsonLayer.addTo(map);
+.then(function (response) {
+    return response.json();
+})
+.then(function (data) {
+    var geojsonLayer = L.geoJSON(data, {
+        style: myStyle2, // Aplica el estilo al cargar la capa GeoJSON
     });
+
+    // Agrega un popup con el nombre de la capa
+    geojsonLayer.bindPopup(function (layer) {
+        return layer.feature.properties.Nombre;
+    });
+
+    layerControl.addOverlay(geojsonLayer, 'Bloque de aulas');
+    geojsonLayer.addTo(map);
+});
+
 // Agregar funcionalidad de geolocalización
 
 map.locate({ setView: true, maxZoom: 16 });
@@ -83,3 +96,4 @@ map.on('locationerror', onLocationError);
 const centerButton = L.easyButton('fas fa-crosshairs fa-lg', function () {
     map.locate({ setView: true, maxZoom: 16 });
 }).addTo(map);
+
