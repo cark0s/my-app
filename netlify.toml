@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/rectorado"
-  to = "/Rectorado.html"
+  to = "/rectorado.html"
   status = 200 # Cambia esto al código de estado que desees
 
 [[redirects]]
