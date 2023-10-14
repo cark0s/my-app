@@ -171,3 +171,54 @@ a.skiplink:focus {
 }
 
 
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.about-area::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,.9);
+  content: '';
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+element.style {
+  background-image: url(https://www.fpune.edu.py/v2/assets/img/header/header-bg.jpg);
+}
+
+.about-area {
+  background-size: cover!important;
+  background-repeat: no-repeat!important;
+}
+.posi-rel {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.de-padding {
+  padding: 8rem 0;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+hoja de estilo de user-agent
+div {
+  display: block;
+}
