@@ -120,11 +120,11 @@ a {
   height: auto;
 }
 
-img {
+.img {
   vertical-align: middle;
   border-style: none;
 }
-img {
+.img {
   overflow-clip-margin: content-box;
   overflow: clip;
 }
