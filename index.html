@@ -128,7 +128,7 @@
         </div>
     </div>
     <!-- Contenedor del mapa -->
-    <div class="container">
+    <div class="containermap">
         <div id="map" style="width: 100%; height: 500px;"></div>
         <div id="layerControl"
             style="position: absolute; top: 10px; right: 10px; background-color: white; padding: 5px; z-index: 1000;">
@@ -143,15 +143,16 @@
     <!-- Enlace al archivo JavaScript de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<footer> 
-
-    <select id="geojsonFiles">
-        <option value="https://cdn.glitch.global/e07e2922-47a6-4542-a11a-86e039aa6cbf/Arearecreativas.geojson?v=1697226277657">Archivo 1</option>
-        <option value="https://cdn.glitch.global/e07e2922-47a6-4542-a11a-86e039aa6cbf/BloqueAulas.geojson?v=1697226286882">Archivo 2</option>
-        <!-- Agrega opciones para otros archivos GeoJSON aquí -->
-    </select>
-    <button onclick="descargarMetadatos('json')">Descargar Metadatos (JSON)</button>
-    <button onclick="descargarComoCSV()">Descargar como CSV</button>
-    <script src="descarga.js"></script>
+<footer class="footer">
+    <div class="container">
+        <select class="form-select custom-select" id="geojsonFiles">
+            <option value="https://cdn.glitch.global/e07e2922-47a6-4542-a11a-86e039aa6cbf/Arearecreativas.geojson?v=1697226277657">Archivo 1</option>
+            <option value="https://cdn.glitch.global/e07e2922-47a6-4542-a11a-86e039aa6cbf/BloqueAulas.geojson?v=1697226286882">Archivo 2</option>
+            <!-- Agrega opciones para otros archivos GeoJSON aquí -->
+        </select>
+        <button class="btn btn-primary" onclick="descargarMetadatos('json')">Descargar Metadatos (JSON)</button>
+        <button class="btn btn-secondary" onclick="descargarComoCSV()">Descargar como CSV</button>
+    </div>
 </footer>
+
 </html>

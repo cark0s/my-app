@@ -128,6 +128,8 @@ a {
   overflow-clip-margin: content-box;
   overflow: clip;
 }
+/*termina*/
+
 /* Estilos generales para el cuerpo de la página */
  body {
   margin: 0;
@@ -137,6 +139,7 @@ a {
   background-color: var(--bs-body-bg); /* Color de fondo de Bootstrap */
   color: var(--bs-body-color); /* Color de texto de Bootstrap */
 }
+/*termina*/
 
 /* Estilos para el contenedor del mapa */
 #map {
@@ -150,6 +153,14 @@ a {
   width: 100%;
   height: 400px;
 }
+.containermap {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px; /* Ajusta el valor según la cantidad de espacio que desees */
+}
+
+/*termina*/ 
+
 
 /* Estilos para el enlace "skiplink" */
 a.skiplink {
@@ -170,6 +181,8 @@ a.skiplink:focus {
   padding: 0.3em;
 }
 
+/*termina */
+/*estilos para  el contenido general del cuerpo */
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
   width: 100%;
@@ -221,4 +234,11 @@ element.style {
 hoja de estilo de user-agent
 div {
   display: block;
+}
+/*termina */
+
+/*select*/ 
+.custom-select {
+  width: 50%; /* Puedes ajustar el valor del ancho según tus necesidades */
+  max-width: 200px; /* Puedes ajustar el ancho máximo si lo deseas */
 }
