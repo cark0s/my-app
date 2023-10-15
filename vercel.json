@@ -1,0 +1,10 @@
+{
+    "redirects": [
+      { "source": "/rectorado", "destination": "/rectorado.html", "permanent": true },
+      { "source": "/derecho", "destination": "/derecho.html", "permanent": true },
+      { "source": "/economia", "destination": "/economia.html", "permanent": true },
+      { "source": "/fafi", "destination": "/fafi.html", "permanent": true }
+    ]
+  }
+  
+  
